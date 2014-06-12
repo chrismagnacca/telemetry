@@ -5,5 +5,8 @@
 				{{> form }}
       	{{> footer }}
     </section>
-		{{> login }}
+		{{#unless currentUser}}
+			{{> login }}
+			{{> register }}
+		{{/unless}}
 </template>

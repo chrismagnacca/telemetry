@@ -5,7 +5,6 @@ Template.register.events({
     var email = t.find('#account-email').value;
     var password = t.find('#account-password').value;
 
-
     if(typeof(password) != "undefined") {
       Accounts.createUser({email: email, password : password}, function(err){
         if (err) {
