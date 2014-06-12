@@ -1,4 +1,5 @@
-## Telemetry <img align="center" src="https://raw.githubusercontent.com/chrismagnacca/telemetry/master/README/satellite.png" alt="icon">
+## Telemetry
+<img align="center" src="https://raw.githubusercontent.com/chrismagnacca/telemetry/master/README/satellite.png" alt="icon">
 
 Built With & On
 * [MeteorJS](https://www.meteor.com)
