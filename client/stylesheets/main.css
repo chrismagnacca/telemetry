@@ -19,8 +19,9 @@ body {
   font-family: sans-serif;
 }
 
-div.form-row {
+.form-row {
   padding-top: 0.313em;
+  padding-bottom: 0.313em;
 }
 
 div#sign-in-items {
@@ -31,4 +32,9 @@ div#sign-in-items {
 ul#msg-container {
   overflow: auto;
   max-height: 40.00em;
+}
+
+.flash, .flash-modal {
+  display: none;
+  border-radius: 0.313em;
 }
