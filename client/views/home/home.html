@@ -2,7 +2,9 @@
 	    <section id="home-container">
 				{{> header }}
 				{{> messages }}
-				{{> form }}
+				{{ #if currentUser }}
+					{{> form }}
+				{{ /if }}
       	{{> footer }}
     </section>
 		{{#unless currentUser}}
