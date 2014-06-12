@@ -1,0 +1,22 @@
+<template name="messages">
+  <div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <ul class="msgs list-group" id="msg-container">
+        {{ #each messages }}
+          {{> message}}
+        {{ else }}
+          <li class="msg list-group-item">What? Nothing to Say?</li>
+        {{ /each }}
+      </ul>
+    </div>
+    <div class="col-md-4"></div>
+  </div>
+</template>
+
+<template name="message">
+  <li class="msg list-group-item" id="{{ _id }}">
+		<span class="message-username">{{ username }}</span>
+		<span class="message-text">{{ message }}</span>
+  </li>
+</template>
