@@ -6,7 +6,7 @@
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
         <h4 class="modal-title">Register</h4>
       </div>
-      <form id="login-form" action="action">
+      <form id="register-form" action="action">
         {{> registerBody }}
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -22,6 +22,9 @@
 <div class="modal-body">
   <div class="row form-row flash flash-modal">
     <div class="col-md-12" id="message"></div>
+  </div>
+  <div class="row form-row">
+    <input class="form-control" type="username" placeholder="Username" id="account-username" />
   </div>
   <div class="row form-row">
     <input class="form-control" type="email" placeholder="Email" id="account-email" />

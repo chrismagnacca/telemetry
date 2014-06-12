@@ -19,6 +19,15 @@ body {
   font-family: sans-serif;
 }
 
+div.form-row {
+  padding-top: 0.313em;
+}
+
+div#sign-in-items {
+  text-align: center;
+  padding-top: 1em;
+}
+
 ul#msg-container {
   overflow: auto
 }

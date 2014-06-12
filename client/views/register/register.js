@@ -3,14 +3,17 @@ Template.register.events({
     e.preventDefault();
 
     var email = t.find('#account-email').value;
+    var username = t.find("#account-username").value;
     var password = t.find('#account-password').value;
 
     if(typeof(password) != "undefined") {
-      Accounts.createUser({email: email, password : password}, function(err){
+      Accounts.createUser({username: username, email: email, password : password}, function(err){
+        debugger;
         if (err) {
           // account creation failed
         } else {
           // log in account
+          $("#modal").modal("hide");
         }
       });
     } else {
