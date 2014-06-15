@@ -7,6 +7,8 @@ Built With & On
 
 Meteor Packages
 * [IronRouter](https://atmospherejs.com/package/iron-router)
+* [Gravatar](https://atmospherejs.com/package/gravatar)
+* [MongoDB Aggregation](http://atmospherejs.com/package/mongodb-aggregation)
 
 ***
 ## Setup
@@ -46,7 +48,8 @@ Ok, everything's ready. Here comes Meteor!
 In no particular order:
 
 1. Add user account pages
-2. Integrate gravitar image
+2. Add ability to assign users to certain rooms
+3. Paginate the chat log to truncate the amount of messages loaded
 
 ## Contributing
 To contribute,

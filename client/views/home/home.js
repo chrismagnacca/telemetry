@@ -3,10 +3,6 @@ Template.home.events({
     e.preventDefault();
     var input = $("input#message-to-add");
     Messages.insert({ username: Meteor.user().username, message: input.val(), room: Session.get("currentRoom") });
-
-    if(typeof(Session.get("currentRoom")) != "undefined")
-      Rooms.upsert({roomNumber: Session.get("currentRoom")});
-
     Meteor.call("ScrollTop");
     input.val("");
   }

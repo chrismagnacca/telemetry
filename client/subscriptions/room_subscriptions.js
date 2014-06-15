@@ -1,5 +1,5 @@
 Meteor.subscribe("rooms", function() {
-	Rooms.find({}).observe({
+	Messages.distinct("room").observe({
 		changed: function(id, fields) {
 		},
 		added: function(id) {
