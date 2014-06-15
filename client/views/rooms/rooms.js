@@ -8,9 +8,6 @@ Template.rooms.events({
 
     Messages.insert({ username: username, message: inputMessage, room: currentRoom });
 
-    if(Rooms.find({number: currentRoom}).count() == 0)
-      Rooms.insert({number: currentRoom});
-
     Meteor.call("ScrollTop");
     $("input#message-to-add").val("");
   }
