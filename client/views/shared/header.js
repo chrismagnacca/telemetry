@@ -4,3 +4,7 @@ Template.header.events({
 		Meteor.logout();
 	}
 });
+
+Template.header.gravatar = function() {
+	return Gravatar.imageUrl(Meteor.user().emails[0].address);
+};

@@ -38,3 +38,9 @@ ul#msg-container {
   display: none;
   border-radius: 0.313em;
 }
+
+.circular {
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+}
