@@ -13,7 +13,7 @@ Template.register.events({
           // account creation failed
         } else {
           // log in account
-          $("#modal").modal("hide");
+          $("#register").modal("hide");
         }
       });
     } else {

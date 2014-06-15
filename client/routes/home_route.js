@@ -1,7 +1,7 @@
 var HomeController = RouteController.extend({
   template: "home",
   data: {
-    options: function() {
+    messages: function() {
       return Messages.find({}, {sort: {order: 1}});
     }
   }
@@ -10,6 +10,6 @@ var HomeController = RouteController.extend({
 Router.map(function() {
   this.route("home", {
     path: "/",
-    controller: HomeController,
+    controller: HomeController
   })
 });
