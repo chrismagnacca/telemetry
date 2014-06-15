@@ -15,3 +15,9 @@ Template.rooms.events({
     $("input#message-to-add").val("");
   }
 });
+
+Template.rooms.helpers ({
+  isCurrentRoom: function() {
+    return (this.number == Session.get("currentRoom"));
+  }
+});

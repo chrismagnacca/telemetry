@@ -1,3 +1,2 @@
 Template.home.events({
-
 });

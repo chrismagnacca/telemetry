@@ -6,6 +6,9 @@ var RoomsController = RouteController.extend({
 		},
 		rooms: function() {
 			return Rooms.find({}, {sort: {order: 1}});
+		},
+		currentRoom: function() {
+			return Session.get("currentRoom");
 		}
 	},
 	action: function() {

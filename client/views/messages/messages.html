@@ -1,17 +1,19 @@
 <template name="messages">
-  <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-      <ul class="msgs list-group" id="msg-container">
-        {{ #each messages }}
-          {{> message}}
-        {{ else }}
-          <li class="msg list-group-item">Start up a conversation!</li>
-        {{ /each }}
-      </ul>
+  <section id="messages-container">
+    <div class="row">
+      <div class="col-md-3"></div>
+      <div class="col-md-6">
+        <ul class="msgs list-group" id="msg-container">
+          {{ #each messages }}
+            {{> message}}
+          {{ else }}
+            <li class="msg list-group-item">Start up a conversation!</li>
+          {{ /each }}
+        </ul>
+      </div>
+      <div class="col-md-3"></div>
     </div>
-    <div class="col-md-3"></div>
-  </div>
+  </section>
 </template>
 
 <template name="message">

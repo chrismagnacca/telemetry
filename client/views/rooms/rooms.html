@@ -1,4 +1,21 @@
 <template name="rooms">
+	<section id="rooms-container">
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6" id="room-container">
+				<ul class="nav nav-tabs">
+				{{#each rooms}}
+			  	{{#if isCurrentRoom }}
+				  	<li class="active"><a href="/room/{{number}}">{{number}}</a></li>
+					{{else}}
+						<li><a href="/room/{{number}}">{{number}}</a></li>
+					{{/if}}
+				{{/each}}
+				</ul>
+			</div>
+		<div class="col-md-3"></div>
+	</div>
 	{{> messages }}
 	{{> messageInput }}
+	</section>
 </template>
