@@ -1,3 +1,2 @@
-Template.rooms.rooms = function() {
-	return Rooms.find({});
-}
+Template.rooms.events({  
+});

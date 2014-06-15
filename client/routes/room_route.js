@@ -2,7 +2,10 @@ var RoomController = RouteController.extend({
 	template: "home",
 	data: {
 		messages: function() {
-			return Messages.find({}, {sort: {order:1}});
+			return Messages.find({}, {sort: {order: 1}});
+		},
+		rooms: function() {
+			return Rooms.find({}, {sort: {order: 1}});
 		}
 	},
 	action: function() {

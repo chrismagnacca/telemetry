@@ -1,9 +1,17 @@
 Template.home.events({
   "submit form#new-message": function(e) {
     e.preventDefault();
-    var input = $("input#message-to-add");
-    Messages.insert({ username: Meteor.user().username, message: input.val(), room: Session.get("currentRoom") });
+
+    var username = Meteor.user().username;
+    var currentRoom = Session.get("currentRoom").toString();
+    var inputMessage = $("input#message-to-add").val();
+
+    Messages.insert({ username: username, message: inputMessage, room: currentRoom });
+
+    if(Rooms.find({number: currentRoom}).count() == 0)
+      Rooms.insert({number: currentRoom});
+
     Meteor.call("ScrollTop");
-    input.val("");
+    $("input#message-to-add").val("");
   }
 });
