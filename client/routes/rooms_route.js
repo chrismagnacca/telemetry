@@ -12,14 +12,14 @@ var RoomsController = RouteController.extend({
 		}
 	},
 	action: function() {
-		Session.set("currentRoom", this.params._id);
+		Session.set("currentRoom", this.params.name);
 		this.render();
 	}
 });
 
 Router.map(function(){
 	this.route("room", {
-		path: "/room/:_id",
+		path: "/room/:name",
 		layoutTemplate: "layout",
 		controller: RoomsController
 	})

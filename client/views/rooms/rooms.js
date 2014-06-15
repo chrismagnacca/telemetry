@@ -7,8 +7,10 @@ Template.rooms.events({
     Messages.insert({ username: username, message: inputMessage, room: currentRoom });
     Meteor.call("ScrollTop");
     $("input#message-to-add").val("");
-  },
+  }
+});
 
+Template.roomCreate.events({
   "submit form#room-create-form": function(e) {
     e.preventDefault();
     var roomCreate = { name: $("#room-name").val(), description: $("#room-description").val() };
@@ -19,6 +21,6 @@ Template.rooms.events({
 
 Template.rooms.helpers ({
   isCurrentRoom: function() {
-    return (this.number == Session.get("currentRoom"));
+    return (this.name == Session.get("currentRoom"));
   }
 });

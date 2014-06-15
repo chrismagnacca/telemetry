@@ -8,10 +8,10 @@
 			  	{{#if isCurrentRoom }}
 				  	<li class="active"><a href="/room/{{number}}">{{name}}</a></li>
 					{{else}}
-						<li><a href="/room/{{number}}">{{name}}</a></li>
+						<li><a href="/room/{{name}}">{{name}}</a></li>
 					{{/if}}
 				{{/each}}
-					<li><a href="" id="room-to-add" data-target="#roomCreate"><span class="glyphicon glyphicon-plus"></span></a></li>
+					<li><a href="#room-create" data-toggle="modal" id="room-to-add"><span class="glyphicon glyphicon-plus"></span></a></li>
 				</ul>
 			</div>
 		<div class="col-md-3"></div>
