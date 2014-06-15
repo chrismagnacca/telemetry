@@ -4,17 +4,29 @@
       <section id="rooms-section">
        <div class="row">
          <div class="col-md-12">
-           <h3 class="rooms-heading">Select a Room</h3>
+           <h3 class="rooms-heading">
+             {{#if noRoomsCreated}}
+               Create a Room
+             {{else}}
+               Select a Room
+             {{/if}}
+           </h3>
          </div>
        </div>
        <div class="row">
          <div class="col-md-3"></div>
          <div class="col-md-6" id="room-container">
-         {{#each rooms}}
+         {{#if noRoomsCreated }}
            <span class="item room">
-             <a href="/room/{{number}}">{{number}}</a>
+             <a href="" id="room-to-add"><span class="glyphicon glyphicon-plus"></span></a>
            </span>
-         {{/each}}
+         {{else}}
+           {{#each rooms}}
+             <span class="item room">
+               <a href="/room/{{number}}">{{number}}</a>
+             </span>
+           {{/each}}
+         {{/if}}
          </div>
          <div class="col-md-3"></div>
        </div>
