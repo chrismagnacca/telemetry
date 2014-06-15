@@ -5,11 +5,13 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 
 html, body {
   height: 100%;
   background: #CCC;
+
 }
 
 body {
@@ -43,4 +45,29 @@ ul#msg-container {
 	border-radius: 150px;
 	-webkit-border-radius: 150px;
 	-moz-border-radius: 150px;
+}
+
+.room {
+  display: table-cell;
+  padding: 0.313em;
+  font-weight: 400;
+  font-size: 1.5em;
+}
+
+span.room a {
+  display: table-cell;
+  background: linear-gradient(to bottom, #fff 0%, #e0e0e0 100%);
+  border: solid 1px;
+  width: 150px;
+  height: 100px;
+  border-radius: 0.313em;
+  text-decoration: none;
+  text-align: center;
+  vertical-align:middle;
+}
+
+
+h3.rooms-heading {
+  font-weight: 300;
+  text-align: center;
 }

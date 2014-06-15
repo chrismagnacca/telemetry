@@ -1,11 +1,7 @@
 <template name="home">
-	    <section id="home-container">
+	  <section id="home-container">
 				{{> header }}
 				{{> rooms }}
-				{{> messages }}
-				{{ #if currentUser }}
-					{{> form }}
-				{{ /if }}
       	{{> footer }}
     </section>
 		{{#unless currentUser}}
