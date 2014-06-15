@@ -17,6 +17,7 @@ var HomeController = RouteController.extend({
 Router.map(function() {
   this.route("home", {
     path: "/",
+    layoutTemplate: "layout",
     controller: HomeController
   })
 });

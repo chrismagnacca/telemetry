@@ -1,5 +1,5 @@
-var RoomController = RouteController.extend({
-	template: "home",
+var RoomsController = RouteController.extend({
+	template: "rooms",
 	data: {
 		messages: function() {
 			return Messages.find({}, {sort: {order: 1}});
@@ -17,6 +17,7 @@ var RoomController = RouteController.extend({
 Router.map(function(){
 	this.route("room", {
 		path: "/room/:_id",
-		controller: RoomController
+		layoutTemplate: "layout",
+		controller: RoomsController
 	})
 });

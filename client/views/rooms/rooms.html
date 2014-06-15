@@ -1,24 +1,3 @@
 <template name="rooms">
-	<section id="rooms-section">
-		<div class="row">
-			<div class="col-md-12">
-				<h3 class="rooms-heading">Select a Room</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6" id="room-container">
-			{{#each rooms}}
-				{{> room}}
-			{{/each}}
-			</div>
-			<div class="col-md-3"></div>
-		</div>
-	</section>
-</template>
 
-<template name="room">
-	<span class="item room">
-		<a href="/room/{{number}}">{{number}}</a>
-	</span>
 </template>

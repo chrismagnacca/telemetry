@@ -1,3 +1,9 @@
 <template name="layout">
+  {{> header }}
   {{> yield }}
+  {{> footer }}
+  {{#unless currentUser}}
+    {{> login }}
+    {{> register }}
+  {{/unless}}
 </template>
