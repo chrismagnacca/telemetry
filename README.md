@@ -1,5 +1,5 @@
 ## Telemetry
-<img align="center" src="https://raw.githubusercontent.com/chrismagnacca/telemetry/master/README/satellite.png" alt="icon">
+<img align="center" style="max-width:120px;" src="https://raw.githubusercontent.com/chrismagnacca/telemetry/master/README/satellite.png" alt="icon">
 
 Built With & On
 * [MeteorJS](https://www.meteor.com)
@@ -46,10 +46,8 @@ Ok, everything's ready. Here comes Meteor!
 ## Upcomming Additions
 In no particular order:
 
-1. Add user account pages
-2. Add ability to assign users to certain rooms
-3. Switch room display from number to name
-4. Paginate the chat log to truncate the amount of messages loaded
+1. Add room permissioning
+2. Paginate the messages log to truncate the amount of messages loaded clientside
 
 ## Contributing
 To contribute,

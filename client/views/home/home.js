@@ -1,7 +1,4 @@
 Template.home.events({
-  "click #room-to-add": function(e) {
-    e.preventDefault();
-  }
 });
 
 Template.home.helpers({

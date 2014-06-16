@@ -6,6 +6,11 @@ var AccountController = RouteController.extend({
 		},
 		rooms: function() {
 			return Rooms.find({}, {sort: {order: 1}});
+		},
+		user: function() {
+			var currentUser = Meteor.user();
+			var user = {username: currentUser.username, email: currentUser.emails[0].address};
+			return user;
 		}
 	},
 	action: function() {
@@ -15,7 +20,7 @@ var AccountController = RouteController.extend({
 
 Router.map(function(){
 	this.route("account", {
-		path: "/account/:_id",
+		path: "/account/:username",
 		layoutTemplate: "layout",
 		controller: AccountController
 	})
