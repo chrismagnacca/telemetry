@@ -8,6 +8,7 @@ Built With & On
 Meteor Packages
 * [IronRouter](https://atmospherejs.com/package/iron-router)
 * [Gravatar](https://atmospherejs.com/package/gravatar)
+* [Marked](https://atmospherejs.com/package/marked)
 
 ***
 ## Setup
