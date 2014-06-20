@@ -19,6 +19,6 @@
 <template name="message">
   <li class="msg list-group-item" id="{{ _id }}">
 		<span class="message-username">{{ username }}:</span>
-		<span class="message-text">{{ message }}</span>
+		<span class="message-text">{{#markdown}}{{ message }}{{/markdown}}</span>
   </li>
 </template>
