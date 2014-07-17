@@ -44,12 +44,6 @@ Ok, everything's ready. Here comes Meteor!
 1. Register a User Account
 2. Chat!
 
-## Upcomming Additions
-In no particular order:
-
-1. Add room permissioning
-2. Paginate the messages log to truncate the amount of messages loaded clientside
-
 ## Contributing
 To contribute,
 
