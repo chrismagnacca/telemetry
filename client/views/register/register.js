@@ -8,7 +8,6 @@ Template.register.events({
 
     if(typeof(password) != "undefined") {
       Accounts.createUser({username: username, email: email, password : password}, function(err){
-        debugger;
         if (err) {
           // account creation failed
         } else {
